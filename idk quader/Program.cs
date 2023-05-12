@@ -45,7 +45,10 @@ namespace OxyPlotExample
             }
             var thisfolder = Directory.GetCurrentDirectory();
             WriteLine("Click here to open the graph.");
-            WriteLine($"\x1B]8;;{thisfolder}\\{filename}\a{filename}\x1B]8;;\a");
+                WriteLine($"\x1B]8;;{thisfolder}\\{filename}\a{filename}\x1B]8;;\a");
+            ReadKey();
+            Write($"\x1B]8;;https://github.com/Snupai/some-graph-shit\aThis Project\x1B]8;;\a");
+            WriteLine($"\x1B]8;;https://snupai.me\aSnupai\x1B]8;;\a");
             ReadKey();
         }
     }
